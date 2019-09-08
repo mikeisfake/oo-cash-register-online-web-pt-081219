@@ -11,11 +11,8 @@ def initialize(discount = nil)
 end 
 
 def add_item(title, price, quantity=1)
- quantiy.times do 
-    @items << title
-  end 
- 
   @total += (price * quantity)
+  @items << title 
 end 
 
 def apply_discount
