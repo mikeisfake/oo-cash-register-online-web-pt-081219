@@ -14,11 +14,11 @@ def add_item(title, price, quantity=1)
 end 
 
 def apply_discount
-  percent = @discount / 100
-  total_with_discount =  @total * percent 
+  percent = self.discount / 100
+  total_with_discount =  self.total * percent 
 
-  @discount == nil ? "There is no discount to apply." : self.total = total_with_discount
-
+  self.discount == nil ? "There is no discount to apply." : self.total = total_with_discount
+  binding.pry
 end 
 
 
