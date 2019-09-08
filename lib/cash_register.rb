@@ -17,7 +17,12 @@ def apply_discount
   percent = @discount / 100.to_f
   total_with_discount =  @total - (@total * percent) 
 
-  @discount == nil ? "There is no discount to apply." : @total = total_with_discount
+  if @discount == nil  
+    "There is no discount to apply." 
+  else
+    @total = total_with_discount
+    
+  end 
 end 
 
 
