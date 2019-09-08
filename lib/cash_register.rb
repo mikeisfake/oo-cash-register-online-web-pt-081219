@@ -18,7 +18,6 @@ def apply_discount
   total_with_discount =  @total - (@total * percent) 
 
   @discount == nil ? "There is no discount to apply." : @total = total_with_discount
-  binding.pry
 end 
 
 
