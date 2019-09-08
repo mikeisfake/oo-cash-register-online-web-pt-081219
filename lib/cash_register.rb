@@ -14,7 +14,6 @@ def add_item(title, price, quantity=1)
 end 
 
 def apply_discount
-
   if !@discount  
     "There is no discount to apply." 
   else
@@ -23,6 +22,9 @@ def apply_discount
     @total = total_with_discount.to_i
     "After the discount, the total comes to $#{@total}."
   end 
+end 
+
+def items
   
 end 
 
