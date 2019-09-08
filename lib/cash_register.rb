@@ -14,7 +14,6 @@ end
 def add_item(title, price, quantity=1)
   @total += (price * quantity)
   @last_trans = (price * quantity)
-  binding.pry 
   quantity.times {@items << title}
   
 end 
@@ -35,7 +34,7 @@ def items
 end 
 
 def void_last_transaction
-  @total - @last_trans
+  @total = @total - @last_trans
 end 
 
 
